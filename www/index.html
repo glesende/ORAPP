@@ -44,12 +44,12 @@
 <body>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-		document.addEventListener("deviceready", onDeviceReady, false);
-
-		function onDeviceReady() {
-			// external url
-			var ref = window.open(encodeURI('http://www.orgullorojo.com'), '_self', 'location=no, toolbar=yes');
-		}
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+	<script>
+		var ref = cordova.InAppBrowser.open('http://www.orgullorojo.com', '_blank', 'location=yes');
+	</script>
 </body>
 
 </html>
