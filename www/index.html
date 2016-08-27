@@ -20,10 +20,7 @@
     // device APIs are available
     //
     function onDeviceReady() {
-         var ref = window.open(encodeURI('http://www.orgullorojo.com'), '_self', 'location=no, toolbar=yes, closebuttoncaption=back');
-         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+         var ref = window.open(encodeURI('http://www.orgullorojo.com'), '_self', 'location=no, toolbar=no, closebuttoncaption=back');
          ref.addEventListener('exit', function(event) { alert(event.type); });
     }
     </script>
