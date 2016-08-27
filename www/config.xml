@@ -1,7 +1,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.orgullorojo" version="1.0.0">
   <name>Orgullo Rojo</name>
-  <description>sample application that responds to the deviceready event.</description>
-  <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
+  <description>Aplicación de OrgulloRojo.com</description>
+  <author href="http://www.orgullorojo.com" email="orgullorojo.com@gmail.com">Orgullo Rojo</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
