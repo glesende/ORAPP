@@ -42,14 +42,15 @@
     <title>OrgulloRojo</title>
 </head>
 <body>
+	hola
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
+    <script type="text/javascript" charset="utf-8">
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        var ref = window.open(encodeURI('http://noches-en-insomnio.blogspot.com.es'), '_self', 'location=no, toolbar=yes');
+    }
     </script>
-	<script>
-		var ref = cordova.InAppBrowser.open('http://www.orgullorojo.com', '_blank', 'location=yes');
-	</script>
 </body>
 
 </html>
