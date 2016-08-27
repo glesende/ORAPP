@@ -42,13 +42,12 @@
     <title>OrgulloRojo</title>
 </head>
 <body>
-	hola
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" charset="utf-8">
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        var ref = window.open(encodeURI('http://www.orgullorojo.com'), '_self', 'location=no, toolbar=yes');
+        var ref = window.open(encodeURI('http://www.orgullorojo.com'), '_self', 'location=no, toolbar=yes, closebuttoncaption=back');
     }
     </script>
 </body>
