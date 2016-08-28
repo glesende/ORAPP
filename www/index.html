@@ -7,14 +7,16 @@
     document.addEventListener('deviceready', onDeviceReady, false);
 	
     function onDeviceReady() {
-         var ref = window.open(encodeURI('http://www.orgullorojo.com/'), '_self', 'location=no,toolbar=no,hidden=no');
+         var ref = window.open(encodeURI('http://www.orgullorojo.com/'), '_self', 'location=no,toolbar=no,hidden=yes');
          ref.addEventListener('loadstart', function(event) { if(event.url.match(/salir/)) { saliendo() } });
+		 ref.addEventListener('loadstop', function(event) { ref.show(); });
          ref.addEventListener('exit', saliendo, false);
     }
 	
 	function saliendo() {
 		navigator.app.exitApp();
 		ref.removeEventListener('exit', saliendo, false);
+		ref.addEventListener('loadstop', function(event) { ref.show(); });
 		ref.removeEventListener('loadstart', function(event) { if(event.url.match(/salir/)) { saliendo() } });
 	}
     </script>
