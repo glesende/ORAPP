@@ -7,7 +7,7 @@
     document.addEventListener('deviceready', onDeviceReady, false);
 	
     function onDeviceReady() {
-         var ref = window.open(encodeURI('http://www.orgullorojo.com/'), '_self', 'location=no,toolbar=no,hidden=yes');
+         var ref = window.open(encodeURI('http://www.orgullorojo.com/'), '_self', 'location=no,toolbar=no,zoom=no,hidden=yes');
          ref.addEventListener('loadstart', function(event) { if(event.url.match(/salir/)) { saliendo() } });
 		 ref.addEventListener('loadstop', function(event) { ref.show(); });
          ref.addEventListener('exit', saliendo, false);
