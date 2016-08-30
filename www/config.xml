@@ -1,10 +1,12 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.orgullorojo" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.orgullorojo" version="1.3.0">
   <name>Orgullo Rojo</name>
   <description>Aplicación de OrgulloRojo.com</description>
   <author href="http://www.orgullorojo.com" email="orgullorojo.com@gmail.com">Orgullo Rojo</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
+  <preference name="permissions" value="none"/>
+  <feature name="http://api.phonegap.com/1.0/notification"/>
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>
   <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1"/>
   <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0"/>
